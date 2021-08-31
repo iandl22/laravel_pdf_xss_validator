@@ -8,6 +8,7 @@ During a recent pentest I had an issue flagged where the tester could upload a p
 After some googling to find out the best way to mediate the issue in Laravel I didn't find much so I wrote my own rule for it and thought I would share it.
 
 It's a basic Laravel rule so you should be able to drop it directly into your app/Rules folder and it can be used like so 
+
 `$request->validate(['the_file' => ['required', 'file', new PdfXssRule()]]);`
 
 
